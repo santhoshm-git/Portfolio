@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.6rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+/* Section Headings */
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3c72;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.card h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* Project Titles */
+.card h3 {
+    text-align: center;
+    margin: 20px 0 10px;
+    color: #2a5298;
+}
+
+/* Text */
+.card p, .card li {
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skills span {
+    background: #2a5298;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.skills span:hover {
+    background: #1e3c72;
+    transform: scale(1.05);
+}
+
+/* Links */
+a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Divider */
+hr {
+    margin: 25px 0;
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #1e3c72;
+    color: white;
+    margin-top: 50px;
+}
